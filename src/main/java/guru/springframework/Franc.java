@@ -1,13 +1,13 @@
 package guru.springframework;
 
-public class Dollar extends Money {
-    public Dollar(int amount) {
+public class Franc extends Money {
+    public Franc(int amount) {
         this.amount = amount;
     }
 
     @Override
     public Money times(int multiple) {
-        return new Dollar(this.amount * multiple);
+        return new Franc(this.amount * multiple);
     }
 
     @Override
