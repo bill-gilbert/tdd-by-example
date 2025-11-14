@@ -1,20 +1,20 @@
 package guru.springframework;
 
-public class Dollar {
+public class Franc {
     private int amount;
 
-    public Dollar(int amount) {
+    public Franc(int amount) {
         this.amount = amount;
     }
 
-    public Dollar times(int multiplier) {
-        return new Dollar(this.amount * multiplier);
+    public Franc times(int multiplier) {
+        return new Franc(this.amount * multiplier);
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Dollar dollar = (Dollar) o;
+        Franc dollar = (Franc) o;
         return amount == dollar.amount;
     }
 
