@@ -18,7 +18,6 @@ class MoneyTest {
     void testEqualityDollar() {
         assertEquals(Money.dollar(5), Money.dollar(5));
         assertNotEquals(Money.dollar(5), Money.dollar(8));
-        //assertNotEquals(Money.dollar(5), Money.dollar(5));
     }
 
     @Test
